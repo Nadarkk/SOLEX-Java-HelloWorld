@@ -47,12 +47,7 @@
         <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
-    <!-- Spring and XSUAA Security -->
-    <dependency>
-        <groupId>com.sap.cloud.security.xsuaa</groupId>
-        <artifactId>xsuaa-spring-boot-starter</artifactId>
-        <version>3.5.0</version>
-    </dependency>
+
 
     <!-- dependencies for test -->
     <dependency>
