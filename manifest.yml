@@ -10,20 +10,8 @@ applications:
     TARGET_RUNTIME: tomcat
     JBP_CONFIG_COMPONENTS: "jres: ['com.sap.xs.java.buildpack.jdk.SAPMachineJDK']"
     JBP_CONFIG_SAP_MACHINE_JDK : "{ version: 21.+ }"
-  services:
-  - javauaa
+
 - name: web
   random-route: true
   path: web
   memory: 1024M
-  env:
-    destinations: >
-      [
-        {
-          "name":"helloworld",
-          "url":"https://helloworld-triumphant-sitatunga-ic.cfapps.ap21.hana.ondemand.com/",
-          "forwardAuthToken": true
-        }
-      ]
-  services:
-  - javauaa
